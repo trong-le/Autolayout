@@ -14,6 +14,7 @@
 		F8DC1C171C306F3A008920A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DC1C151C306F3A008920A9 /* LaunchScreen.storyboard */; };
 		F8DC1C221C306F3A008920A9 /* AutolayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DC1C211C306F3A008920A9 /* AutolayoutTests.swift */; };
 		F8DC1C2D1C306F3A008920A9 /* AutolayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DC1C2C1C306F3A008920A9 /* AutolayoutUITests.swift */; };
+		F8DC1C3C1C3079EC008920A9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DC1C3B1C3079EC008920A9 /* User.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F8DC1C281C306F3A008920A9 /* AutolayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutolayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DC1C2C1C306F3A008920A9 /* AutolayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutolayoutUITests.swift; sourceTree = "<group>"; };
 		F8DC1C2E1C306F3A008920A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8DC1C3B1C3079EC008920A9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				F8DC1C0E1C306F3A008920A9 /* ViewController.swift */,
 				F8DC1C101C306F3A008920A9 /* Main.storyboard */,
+				F8DC1C3B1C3079EC008920A9 /* User.swift */,
 				F8DC1C131C306F3A008920A9 /* Assets.xcassets */,
 				F8DC1C3A1C306FD3008920A9 /* Supporting Files */,
 			);
@@ -265,6 +268,7 @@
 			files = (
 				F8DC1C0F1C306F3A008920A9 /* ViewController.swift in Sources */,
 				F8DC1C0D1C306F3A008920A9 /* AppDelegate.swift in Sources */,
+				F8DC1C3C1C3079EC008920A9 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
