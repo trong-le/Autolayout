@@ -37,7 +37,7 @@ class ViewController: UIViewController
         passwordLabel.text = secure ? "Secured Password" : "Password"
         nameLabel.text = loggedInUser?.name
         companyLabel.text = loggedInUser?.company
-        imageView.image = loggedInUser?.image
+        image = loggedInUser?.image
     }
     
     // Fill in 
@@ -48,6 +48,37 @@ class ViewController: UIViewController
     // Show password security setting, changes security bool
     @IBAction func toggleSecurity() {
         secure = !secure
+    }
+    
+    // Set constraints on images
+    var image: UIImage? {
+        get {
+            return imageView.image
+        }
+        set {
+            imageView.image = newValue
+            if let constrainedView = imageView {
+                if let newImage = newValue {
+                    aspectRatioConstraint = NSLayoutConstraint(item: constrainedView, attribute: .Width, relatedBy: .Equal, toItem: constrainedView, attribute: .Height, multiplier: newImage.aspectRatio, constant: 0)
+                } else {
+                    aspectRatioConstraint = nil
+                }
+            }
+        }
+    }
+    
+    // Remove existing constraints and add new ones
+    var aspectRatioConstraint: NSLayoutConstraint? {
+        willSet {
+            if let existingConstraint = aspectRatioConstraint {
+                view.removeConstraint(existingConstraint)
+            }
+        }
+        didSet {
+            if let newConstraint = aspectRatioConstraint {
+                view.addConstraint(newConstraint)
+            }
+        }
     }
 }
 
@@ -60,5 +91,13 @@ extension User
         } else {
             return UIImage(named: "unknown_user")
         }
+    }
+}
+
+// Set aspect ratio method
+extension UIImage
+{
+    var aspectRatio: CGFloat {
+        return size.height != 0 ? size.width / size.height : 0
     }
 }

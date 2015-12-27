@@ -70,24 +70,24 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="700" image="Scripps" translatesAutoresizingMaskIntoConstraints="NO" id="7KY-KK-Zon">
-                                <rect key="frame" x="20" y="280" width="283" height="300"/>
-                                <animations/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07q-ub-azx">
-                                <rect key="frame" x="311" y="409" width="45" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="800" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07q-ub-azx">
+                                <rect key="frame" x="507" y="421" width="73" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5f3-Fc-Rvh">
-                                <rect key="frame" x="311" y="438" width="73" height="21"/>
+                                <rect key="frame" x="507" y="450" width="73" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="200" verticalCompressionResistancePriority="700" image="Scripps" translatesAutoresizingMaskIntoConstraints="NO" id="7KY-KK-Zon">
+                                <rect key="frame" x="20" y="292" width="479" height="300"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -100,30 +100,82 @@
                             <constraint firstAttribute="leadingMargin" secondItem="TcP-oc-MJN" secondAttribute="leading" id="9L7-Hm-4UD"/>
                             <constraint firstItem="R53-KU-UPS" firstAttribute="width" secondItem="ZEx-gT-UZs" secondAttribute="width" id="9Mt-ss-ccE"/>
                             <constraint firstAttribute="leadingMargin" secondItem="gdm-gv-zRK" secondAttribute="leading" id="BEK-As-EOj"/>
-                            <constraint firstItem="7KY-KK-Zon" firstAttribute="top" secondItem="EUf-Zs-Bt3" secondAttribute="bottom" constant="154" id="FPZ-dH-sLA"/>
+                            <constraint firstItem="7KY-KK-Zon" firstAttribute="top" relation="greaterThanOrEqual" secondItem="EUf-Zs-Bt3" secondAttribute="bottom" constant="8" symbolic="YES" id="FPZ-dH-sLA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5f3-Fc-Rvh" secondAttribute="bottom" constant="20" id="Gbl-ou-3as">
+                                <variation key="heightClass=regular" constant="8" symbolic="YES"/>
+                            </constraint>
                             <constraint firstAttribute="leadingMargin" secondItem="R53-KU-UPS" secondAttribute="leading" id="LjX-XB-aHq"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7KY-KK-Zon" secondAttribute="bottom" constant="20" id="QJp-El-6ek"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="7KY-KK-Zon" secondAttribute="leading" id="PMO-Eh-7Lt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7KY-KK-Zon" secondAttribute="bottom" constant="8" symbolic="YES" id="QJp-El-6ek"/>
                             <constraint firstItem="ZEx-gT-UZs" firstAttribute="bottom" secondItem="EUf-Zs-Bt3" secondAttribute="bottom" id="SBZ-3s-7GC"/>
-                            <constraint firstItem="5f3-Fc-Rvh" firstAttribute="top" secondItem="07q-ub-azx" secondAttribute="bottom" constant="8" id="UXa-pq-F7f"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="07q-ub-azx" secondAttribute="leading" id="SdQ-4R-Fjn"/>
+                            <constraint firstItem="5f3-Fc-Rvh" firstAttribute="top" secondItem="07q-ub-azx" secondAttribute="bottom" constant="8" symbolic="YES" id="UXa-pq-F7f"/>
                             <constraint firstItem="h6s-Y0-RTf" firstAttribute="leading" secondItem="gdm-gv-zRK" secondAttribute="trailing" constant="8" symbolic="YES" id="V5N-Px-uBn"/>
                             <constraint firstItem="gdm-gv-zRK" firstAttribute="baseline" secondItem="h6s-Y0-RTf" secondAttribute="baseline" id="VJ9-hf-iAP"/>
                             <constraint firstItem="BCE-YR-Ytj" firstAttribute="leading" secondItem="TcP-oc-MJN" secondAttribute="trailing" constant="8" symbolic="YES" id="X8q-ep-WIS"/>
                             <constraint firstItem="Dvr-fl-qMv" firstAttribute="leading" secondItem="R53-KU-UPS" secondAttribute="trailing" constant="8" symbolic="YES" id="c6n-kE-7WI"/>
                             <constraint firstItem="ZEx-gT-UZs" firstAttribute="leading" secondItem="EUf-Zs-Bt3" secondAttribute="trailing" constant="8" symbolic="YES" id="cCc-fs-Y0R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5f3-Fc-Rvh" secondAttribute="trailing" id="e1w-hx-1YR"/>
                             <constraint firstAttribute="leadingMargin" secondItem="7KY-KK-Zon" secondAttribute="leading" id="e9V-tx-8Ao"/>
                             <constraint firstItem="EUf-Zs-Bt3" firstAttribute="leading" secondItem="Dvr-fl-qMv" secondAttribute="trailing" constant="82" id="eO2-i8-eaV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="07q-ub-azx" secondAttribute="trailing" id="eYo-Y6-nEw"/>
                             <constraint firstItem="07q-ub-azx" firstAttribute="bottom" secondItem="7KY-KK-Zon" secondAttribute="centerY" id="exz-7k-tuX"/>
                             <constraint firstItem="EUf-Zs-Bt3" firstAttribute="baseline" secondItem="Dvr-fl-qMv" secondAttribute="baseline" id="fA4-yB-Tqk"/>
                             <constraint firstItem="BCE-YR-Ytj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gEh-Qc-jEp"/>
+                            <constraint firstItem="7KY-KK-Zon" firstAttribute="top" relation="greaterThanOrEqual" secondItem="EUf-Zs-Bt3" secondAttribute="bottom" constant="8" symbolic="YES" id="gMP-sD-fmL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5f3-Fc-Rvh" secondAttribute="trailing" id="kOl-x9-MyO"/>
                             <constraint firstItem="ZEx-gT-UZs" firstAttribute="top" secondItem="EUf-Zs-Bt3" secondAttribute="top" id="kkH-11-BwY"/>
+                            <constraint firstItem="07q-ub-azx" firstAttribute="top" secondItem="7KY-KK-Zon" secondAttribute="bottom" constant="19" id="ne9-lm-fV3">
+                                <variation key="heightClass=regular" constant="8" symbolic="YES"/>
+                            </constraint>
                             <constraint firstItem="TcP-oc-MJN" firstAttribute="baseline" secondItem="BCE-YR-Ytj" secondAttribute="baseline" id="nmB-hg-uhs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="07q-ub-azx" secondAttribute="trailing" id="ogD-Gu-unp"/>
+                            <constraint firstItem="5f3-Fc-Rvh" firstAttribute="top" secondItem="07q-ub-azx" secondAttribute="bottom" constant="8" id="qzZ-Oz-qgn">
+                                <variation key="heightClass=regular" constant="8" symbolic="YES"/>
+                            </constraint>
                             <constraint firstItem="5f3-Fc-Rvh" firstAttribute="leading" secondItem="07q-ub-azx" secondAttribute="leading" id="rXz-im-1T8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="h6s-Y0-RTf" secondAttribute="trailing" id="uo4-4W-TL0"/>
                             <constraint firstItem="h6s-Y0-RTf" firstAttribute="top" secondItem="BCE-YR-Ytj" secondAttribute="bottom" constant="8" symbolic="YES" id="wNU-1X-quN"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="5f3-Fc-Rvh" secondAttribute="leading" id="wvq-lC-Vkz"/>
                             <constraint firstItem="gdm-gv-zRK" firstAttribute="width" secondItem="TcP-oc-MJN" secondAttribute="width" id="xOd-Tt-yLc"/>
-                            <constraint firstItem="07q-ub-azx" firstAttribute="leading" secondItem="7KY-KK-Zon" secondAttribute="trailing" constant="8" id="xUd-0X-eFf"/>
+                            <constraint firstItem="07q-ub-azx" firstAttribute="leading" secondItem="7KY-KK-Zon" secondAttribute="trailing" constant="8" symbolic="YES" id="xUd-0X-eFf"/>
                             <constraint firstAttribute="leadingMargin" secondItem="gdm-gv-zRK" secondAttribute="leading" id="z7b-gG-Stq"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="PMO-Eh-7Lt"/>
+                                <exclude reference="gMP-sD-fmL"/>
+                                <exclude reference="SdQ-4R-Fjn"/>
+                                <exclude reference="ne9-lm-fV3"/>
+                                <exclude reference="ogD-Gu-unp"/>
+                                <exclude reference="kOl-x9-MyO"/>
+                                <exclude reference="qzZ-Oz-qgn"/>
+                                <exclude reference="wvq-lC-Vkz"/>
+                                <exclude reference="Gbl-ou-3as"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="FPZ-dH-sLA"/>
+                                <include reference="PMO-Eh-7Lt"/>
+                                <exclude reference="e9V-tx-8Ao"/>
+                                <include reference="gMP-sD-fmL"/>
+                                <include reference="SdQ-4R-Fjn"/>
+                                <exclude reference="eYo-Y6-nEw"/>
+                                <exclude reference="exz-7k-tuX"/>
+                                <include reference="ne9-lm-fV3"/>
+                                <include reference="ogD-Gu-unp"/>
+                                <exclude reference="xUd-0X-eFf"/>
+                                <exclude reference="UXa-pq-F7f"/>
+                                <exclude reference="e1w-hx-1YR"/>
+                                <include reference="kOl-x9-MyO"/>
+                                <include reference="qzZ-Oz-qgn"/>
+                                <exclude reference="rXz-im-1T8"/>
+                                <include reference="wvq-lC-Vkz"/>
+                                <include reference="Gbl-ou-3as"/>
+                                <exclude reference="QJp-El-6ek"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="companyLabel" destination="5f3-Fc-Rvh" id="tlr-zz-ogn"/>
@@ -136,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="448" y="437"/>
+            <point key="canvasLocation" x="448" y="436.5"/>
         </scene>
     </scenes>
     <resources>
